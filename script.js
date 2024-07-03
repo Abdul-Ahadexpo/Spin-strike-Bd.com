@@ -1,9 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Show floating order button after the page loads
-  const floatingOrderBtn = document.querySelector(".floating-order-btn");
-  floatingOrderBtn.style.display = "block";
-});
-
 function showProductDetails(title, imageUrl, description, price) {
   // Hide other sections
   document.querySelectorAll("main > section").forEach((section) => {

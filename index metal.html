@@ -5,68 +5,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beyblade Boys BD</title>
-  <style>
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .bbl {
-      font-size: 8rem;
-      display: block;
-      margin-top: 100px;
-      background-image: linear-gradient(240deg, #2f00ff, #00ff22);
-      -webkit-background-clip: text;
-      /* For older WebKit-based browsers */
-      background-clip: text;
-      color: transparent;
-    }
-
-    #mb {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      background-color: #399fff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #mb:hover {
-      background-color: #007dd1;
-    }
-
-    body {
-      background-image: url("https://canvas.tubitv.com/opts/P6n7Aue_2l7aKg==/60ff5601-99e8-42ec-8495-4483b33c7a59/CIAPELgIOgUxLjEuMg==");
-      background-size: cover;
-      background-position: center;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      position: relative;
-      height: 100vh;
-      /* Adjust height as needed */
-      opacity: 0;
-      animation: fadeIn 1s forwards;
-    }
-
-    @media (max-width: 768px) {
-      .product {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style metal.css">
+  <link rel="icon" href="favicon_io/Untitled_Project-removebg-preview.png" type="image/x-icon">
 </head>
 
 <body>
-  <h1 class="bbl">coming soon</h1>
-  <button id="mb" onclick="window.open('index.html')">Back to Products</button>
+  <!-- Header -->
+  <header>
+    <h1 class="bb">Metal Beyblades in BD</h1>
+    <nav>
+      <ul>
+        <li><a class="bt" href="#home">Home</a></li>
+        <li><a class="bt" href="#products">Products</a></li>
+        <li><a class="bt" href="#about">About</a></li>
+        <li><a class="bd" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Additional Section with Buttons -->
+    <section id="additional-section">
+      <h2 class="zenbtn">Grab your Metal, Burst, and X Beys now!</h2>
+      <button class="bbt" onclick="window.open('index metal.html')">Beyblade Metal</button>
+      <button class="bbt" onclick="window.open('index burst.html')">Beyblade Burst</button>
+      <button class="bbt" onclick="window.open('index.html')">Beyblade X</button>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2>Our Metal series Beyblade</h2>
+      <div class="product"
+        onclick="showProductDetails('Galaxy-Pegasus W105R²F with LAUNCHER', 'https://i5.walmartimages.com/asr/268dc8f3-5b5f-4a11-b114-764af364f0e8.d26af063cd0aed8ef919225c7102532f.jpeg', 'Suitable age: 6 years and up PKG size: W130×H152×D65mm', '600TK')">
+        <img
+          src="https://i5.walmartimages.com/asr/268dc8f3-5b5f-4a11-b114-764af364f0e8.d26af063cd0aed8ef919225c7102532f.jpeg"
+          alt="Beyblade Image">
+        <div class="product-details">
+          <h3>Galaxy-Pegasus W105R²F with LAUNCHER</h3>
+          <p>Suitable age: 6 years and up PKG size: W130×H152×D65mm</p>
+          <b>Price: 600TK</b>
+        </div>
+      </div>
+      <div class="product"
+        onclick="showProductDetails('BB-88 Meteo L-Drago LW105LF with LAUNCHER', 'https://th.bing.com/th/id/R.36e01f0ed6638f14d987eda31b7347f9?rik=Jfg9vXjsuWKmwQ&riu=http%3a%2f%2ffarm8.staticflickr.com%2f7173%2f6792414735_8ca48e4606_b.jpg&ehk=R47Jyzlv%2fRJF6d%2fA8tCelpF1niRA9pyZYbbyUFgqVtc%3d&risl=&pid=ImgRaw&r=0', 'Suitable age: 6 years and up PKG size: W130×H152×D65mm', '540TK')">
+        <img
+          src="https://th.bing.com/th/id/R.36e01f0ed6638f14d987eda31b7347f9?rik=Jfg9vXjsuWKmwQ&riu=http%3a%2f%2ffarm8.staticflickr.com%2f7173%2f6792414735_8ca48e4606_b.jpg&ehk=R47Jyzlv%2fRJF6d%2fA8tCelpF1niRA9pyZYbbyUFgqVtc%3d&risl=&pid=ImgRaw&r=0"
+          alt="Beyblade Image">
+        <div class="product-details">
+          <h3>BB-88 Meteo L-Drago LW105LF with LAUNCHER</h3>
+          <p>Suitable age: 6 years and up PKG size: W130×H152×D65mm</p>
+          <b>Price: 540TK</b>
+        </div>
+      </div>
+      <div class="product"
+        onclick="showProductDetails('BB-104 Basalt-Horogium 145WD with LAUNCHER', 'https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/edIAAOSwgQ9V4IZl/$_57.JPG?set_id=880000500F', 'Suitable age: 6 years and up PKG size: W135×H157×D68mm', '520TK')">
+        <img src="https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/edIAAOSwgQ9V4IZl/$_57.JPG?set_id=880000500F"
+          alt="Beyblade Luncher Image">
+        <div class="product-details">
+          <h3>BB-104 Basalt-Horogium 145WD with LAUNCHER</h3>
+          <p>Suitable age: 6 years and up PKG size: W135×H157×D68mm</p>
+          <b>Price: 520TK</b>
+        </div>
+      </div>
+
+      <div class="product"
+        onclick="showProductDetails('B-116 Divine-Fox 90W²D with LAUNCHER', 'https://th.bing.com/th/id/R.32b546ac6ebf0599d424710d945a4f40?rik=s0Py9KvVJAbHew&riu=http%3a%2f%2fg02.a.alicdn.com%2fkf%2fHTB1sd1QLVXXXXaqXpXXq6xXFXXXS%2fRare-Beyblade-BB116E-4D-Metal-Fight-Launcher-Top-Set-DIVINE-FOX-90W2D.jpg&ehk=o5od9l5r3sZQod2PDdGRi9TeLCWHUMgZd9IE0FYFgmM%3d&risl=&pid=ImgRaw&r=0', 'Suitable age: 6 years and up PKG size: W120×H180×D57m', '460TK')">
+        <img
+          src="https://th.bing.com/th/id/R.32b546ac6ebf0599d424710d945a4f40?rik=s0Py9KvVJAbHew&riu=http%3a%2f%2fg02.a.alicdn.com%2fkf%2fHTB1sd1QLVXXXXaqXpXXq6xXFXXXS%2fRare-Beyblade-BB116E-4D-Metal-Fight-Launcher-Top-Set-DIVINE-FOX-90W2D.jpg&ehk=o5od9l5r3sZQod2PDdGRi9TeLCWHUMgZd9IE0FYFgmM%3d&risl=&pid=ImgRaw&r=0"
+          alt="Beyblade Luncher Image">
+        <div class="product-details">
+          <h3>B-116 Divine-Fox 90W²D with LAUNCHER</h3>
+          <p>Suitable age: 6 years and up PKG size: W120×H180×D57mm</p>
+          <b>Price: 460TK</b>
+        </div>
+      </div>
+
+
+
+
+      <div class="product"
+        onclick="showProductDetails('BB-126 4D Flash Sagittario 230WD with LAUNCHER', 'lamu.png', 'Suitable age: 6 years and up PKG size: W135×H157×D68mm', '460TK')">
+        <img src="lamu.png">
+        <div class="product-details">
+          <h3>BB-126 4D Flash Sagittario 230WD with LAUNCHER</h3>
+          <p>Suitable age: 6 years and up PKG size: W135×H157×D68mm</p>
+          <b>Price: 460TK</b>
+        </div>
+      </div>
+
+
+
+    </section>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>How to order?</h2>
+      <p>Find the best products here! and <b>Click the Order Now button.</b><br> You will be at the Check-out page, In
+        the <b><i>3rd Box</i></b> write the name of the Beyblade you want and fill
+        all the boxes and give necessary details.</p>
+      <p><b>You can Order any where from Bangladesh. <h3>Delivery Charge Free</h3>
+          </h3></b></p>
+      <p><b>Contact us at:</b></p>
+      <ul>
+        <li>Phone: <a href="tel:+8801521722011">+8801521722011</a></li>
+      </ul>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Beyblade Boys BD is a Beyblade selling group in Bangladesh. We import Beyblades straight from <b>Indonesia</b>
+        and <b>Malaysia.</b></p>
+    </section>
+
+    <!-- Product Details Section (Hidden by default) -->
+    <section id="product-details" style="display: none;">
+      <h2 id="product-title"></h2>
+      <img id="product-image" src="" alt="Product Image">
+      <p id="product-description"></p>
+      <b id="product-price"></b>
+      <a href="https://abdul-ahadexpo.github.io/Beyblade-check-out/" target="_blank" class="order-btn">Order Now</a>
+      <button onclick="goBack()">Back to Products</button>
+    </section>
+
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Beyblade Boys BD. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>

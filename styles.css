@@ -39,7 +39,7 @@ header::before {
   z-index: 0;
 }
 .bb {
-  background-image: linear-gradient(240deg, #3cff00, #0059ff);
+  background-image: linear-gradient(-180deg, #1eff00, #0066ff);
   -webkit-background-clip: text; /* For older WebKit-based browsers */
   background-clip: text;
   color: transparent;
@@ -208,7 +208,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
@@ -264,8 +264,7 @@ footer {
     text-decoration: underline 3px rgb(0, 119, 255);
   }
 
-  .order-btn,
-  .floating-order-btn {
+  .order-btn {
     width: 100%;
     text-align: center;
     padding: 15px 20px;
