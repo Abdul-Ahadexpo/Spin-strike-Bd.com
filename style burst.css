@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-image: url("https://w0.peakpx.com/wallpaper/543/122/HD-wallpaper-beyblade-burst-surge-beyblade-burst.jpg");
+  background-image: url("beyblade-burst-surge.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -208,7 +208,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
