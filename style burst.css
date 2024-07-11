@@ -39,7 +39,7 @@ header::before {
   z-index: 0;
 }
 .bb {
-  background-image: linear-gradient(180deg, #1eff00, #0066ff);
+  background-image: linear-gradient(180deg, #0ccaab, #bfd8ff);
   -webkit-background-clip: text; /* For older WebKit-based browsers */
   background-clip: text;
   color: transparent;
