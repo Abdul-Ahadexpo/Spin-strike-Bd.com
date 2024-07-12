@@ -169,7 +169,7 @@
       <p id="product-description"></p>
       <b id="product-price"></b>
       <a href="https://abdul-ahadexpo.github.io/Beyblade-check-out/" target="_blank" class="order-btn">Order Now</a>
-      <button onclick="goBack()">Back to Products</button>
+      <button onclick="reloadPage()">Back to Products</button>
     </section>
 
 
@@ -183,6 +183,11 @@
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+  <script>
+    function reloadPage() {
+      location.reload(); // Reloads the current page
+    }
+  </script>
 </body>
 
 </html>
