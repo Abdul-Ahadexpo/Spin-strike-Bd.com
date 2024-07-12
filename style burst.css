@@ -1,11 +1,13 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: monospace;
+  background-color: #0f0f0f;
+  color: #00ff9c;
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
   box-sizing: border-box;
 }
-
 header {
   background-image: url("beyblade-burst-surge.jpg");
   background-size: cover;
@@ -18,7 +20,6 @@ header {
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -35,38 +36,39 @@ header::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
+
 .bb {
-  background-image: linear-gradient(180deg, #0ccaab, #bfd8ff);
-  -webkit-background-clip: text; /* For older WebKit-based browsers */
+  background-image: linear-gradient(180deg, #00ff9c, #bfd8ff);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .bt {
-  border: #006eff 2px solid;
+  border: #00ff9c 2px solid;
 }
+
 .bd {
-  border: #006eff 2px solid;
+  border: #00ff9c 2px solid;
 }
 
 .zenbtn {
-  background-image: linear-gradient(to right, #ff0000, #006eff);
-  -webkit-background-clip: text; /* For older WebKit-based browsers */
+  background-image: linear-gradient(to right, #ff0000, #00ff9c);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .bbt {
-  /*This is the three genaration buttons*/
   background-color: #2e2e2e;
-  color: #00ffaa;
+  color: #00ff9c;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-family: "monospace", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 5px;
@@ -87,7 +89,7 @@ header::before {
   background: radial-gradient(
     circle,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 255, 170, 0.8) 80%
+    rgba(0, 255, 156, 0.8) 80%
   );
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -128,15 +130,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: white;
+  color: #00ff9c;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: rgba(
-    48,
-    48,
-    48,
-    0.575
-  ); /* Background color similar to header */
+  background-color: rgba(48, 48, 48, 0.575);
   border-radius: 20px;
 }
 
@@ -146,21 +143,44 @@ header nav ul li a:hover {
 
 main {
   padding: 2rem;
-  margin-bottom: 100px; /* Added bottom margin to accommodate footer */
+  margin-bottom: 100px;
 }
 
 h2 {
-  color: #009fa5;
+  color: #00ff9c;
   text-align: center;
 }
 
 .product {
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
+  background-color: #fdfdfd;
   padding: 1rem;
   margin: 1rem 0;
+  color: #003521;
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.product:hover::before {
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+
+.product span {
+  position: relative;
+  z-index: 1;
+}
+
+.product:hover {
+  color: #000000;
+  background-color: #63ffcb;
+}
+
+.product:active {
+  color: #383838;
+  background-color: #b4eaff;
 }
 
 .product img {
@@ -179,7 +199,7 @@ h2 {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin: 5px 0; /* Adjusted margin for better spacing */
+  margin: 5px 0;
 }
 
 .order-btn:hover {
@@ -187,8 +207,8 @@ h2 {
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #1b1b1b;
+  color: #00ff9c;
   text-align: center;
   padding: 1rem;
   position: static;
@@ -197,7 +217,6 @@ footer {
   right: 0;
 }
 
-/* Ensure the product details section is styled nicely */
 #product-details img {
   max-width: 200px;
   display: block;
@@ -219,15 +238,17 @@ footer {
   background-color: #007dd1;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .product {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
   }
 
   .product img {
     margin: 0 0 1rem 0;
+    max-width: 80px;
   }
 
   header nav ul li {
@@ -235,16 +256,26 @@ footer {
     text-align: center;
     margin: 5px 0;
   }
+
   .bbt {
-    flex: auto; /* Ensure buttons do not stretch in mobile view */
+    flex: auto;
     margin: 1vh -0vw;
   }
+
   .bd {
     padding: 0px;
   }
+
   .bd {
     border: none;
     text-decoration: underline 3px rgb(0, 119, 255);
+  }
+
+  .bp {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .order-btn {
@@ -264,7 +295,28 @@ footer {
   }
 
   .order-btn {
-    flex: auto; /* Ensure buttons do not stretch in mobile view */
-    margin: 5vh -5vw; /* Add margin between buttons */
+    flex: auto;
+    margin: 5vh -5vw;
+  }
+
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .product img {
+    max-width: 80px;
+  }
+
+  .product-details {
+    text-align: center;
   }
 }
