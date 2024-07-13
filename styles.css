@@ -321,4 +321,12 @@ footer {
   .product-details {
     text-align: center;
   }
+  .product-details p {
+    display: none;
+  }
+  .product-details h3 {
+    /* text-align: justify; */
+    font-size: medium;
+    word-break: break-all;
+  }
 }
