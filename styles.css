@@ -115,6 +115,57 @@ header::before {
   background-color: #00ffaa;
 }
 
+/* sell your beys start */
+.bbb {
+  background-color: #2e2e2e; /* sell your beys start */
+  display: block;
+  margin-top: 10px;
+  color: #0077ff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "monospace", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bbb::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 255, 242, 0.8) 80%
+  );
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.bbb:hover::before {
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+
+.bbb:hover {
+  color: #000000;
+  background-color: #00e1ff; /* sell your bey end */
+}
+
+/* sell your bey end */
+
 header h1,
 header nav {
   position: relative;
@@ -350,7 +401,11 @@ footer {
     flex: auto;
     margin: 1vh -0vw;
   }
-
+  .bbb:active {
+    color: #000000;
+    background-color: #00e1ff;
+    size: 4px;
+  }
   .bd {
     padding: 0px;
   }
