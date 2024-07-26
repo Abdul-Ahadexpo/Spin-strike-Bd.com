@@ -66,57 +66,57 @@ function copyText(elementId) {
   alert("Text copied to clipboard");
 }
 
-// script.js H3 COPY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-document.addEventListener("DOMContentLoaded", () => {
-  // Add a click event listener to all h3 elements
-  document.querySelectorAll("h3").forEach((h3) => {
-    h3.addEventListener("click", () => {
-      copyText(h3.textContent);
-    });
-  });
-});
+// // script.js H3 COPY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// document.addEventListener("DOMContentLoaded", () => {
+//   // Add a click event listener to all h3 elements
+//   document.querySelectorAll("h3").forEach((h3) => {
+//     h3.addEventListener("click", () => {
+//       copyText(h3.textContent);
+//     });
+//   });
+// });
 
-function copyText(text) {
-  // Create a temporary textarea element
-  const tempTextarea = document.createElement("textarea");
-  tempTextarea.value = text;
+// function copyText(text) {
+//   // Create a temporary textarea element
+//   const tempTextarea = document.createElement("textarea");
+//   tempTextarea.value = text;
 
-  // Append the textarea to the body
-  document.body.appendChild(tempTextarea);
+//   // Append the textarea to the body
+//   document.body.appendChild(tempTextarea);
 
-  // Select the text in the textarea
-  tempTextarea.select();
-  tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+//   // Select the text in the textarea
+//   tempTextarea.select();
+//   tempTextarea.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text to the clipboard
-  document.execCommand("copy");
+//   // Copy the text to the clipboard
+//   document.execCommand("copy");
 
-  // Remove the textarea from the body
-  document.body.removeChild(tempTextarea);
+//   // Remove the textarea from the body
+//   document.body.removeChild(tempTextarea);
 
-  // Optional: Notify the user that the text has been copied
-  alert("Text copied to clipboard");
-}
+//   // Optional: Notify the user that the text has been copied
+//   alert("Text copied to clipboard");
+// }
 
-// script.js CLICK TO COPY
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("h3").forEach((h3) => {
-    h3.addEventListener("click", () => {
-      copyText(h3.textContent);
-    });
-  });
-});
+// // script.js CLICK TO COPY
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.querySelectorAll("h3").forEach((h3) => {
+//     h3.addEventListener("click", () => {
+//       copyText(h3.textContent);
+//     });
+//   });
+// });
 
-function copyText(text) {
-  const tempTextarea = document.createElement("textarea");
-  tempTextarea.value = text;
+// function copyText(text) {
+//   const tempTextarea = document.createElement("textarea");
+//   tempTextarea.value = text;
 
-  document.body.appendChild(tempTextarea);
-  tempTextarea.select();
-  tempTextarea.setSelectionRange(0, 99999);
+//   document.body.appendChild(tempTextarea);
+//   tempTextarea.select();
+//   tempTextarea.setSelectionRange(0, 99999);
 
-  document.execCommand("copy");
-  document.body.removeChild(tempTextarea);
+//   document.execCommand("copy");
+//   document.body.removeChild(tempTextarea);
 
-  alert("Text copied to clipboard");
-}
+//   alert("Text copied to clipboard");
+// }
