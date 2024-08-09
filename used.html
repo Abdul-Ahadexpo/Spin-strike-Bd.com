@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin strike BD</title>
+  <link rel="stylesheet" href="used.css">
+  <link rel="icon" href="favicon_io/Untitled_Project-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="bb">Beyblades In Bangladesh</h1>
+    <nav>
+      <ul>
+        <li><a class="bt" href="#home" onclick="reloadPage()">Home</a></li>
+        <li><a class="bt" href="#products">Products</a></li>
+        <li><a class="bt" id="ab" href="#about">About</a></li>
+        <li><a class="bd" href="#phn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Additional Section with Buttons -->
+    <section id="additional-section">
+      <h2 class="zenbtn">Grab your "NEW" Metal, Burst, and X Beys now!</h2>
+      <button class="bbt" onclick="window.open('index metal.html')">Beyblade Metal</button>
+      <button class="bbt" onclick="window.open('index burst.html')">Beyblade Burst</button>
+      <button class="bbt" onclick="window.open('index.html')">Beyblade X</button>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <div class="bp">
+      <h2>Used Beyblades</h2>
+      <h2 class="bp2-2">Low cost, high quality</h2>
+    </div>
+    <section id="products">
+
+
+
+
+
+      <div class="product"
+        onclick="showProductDetails(' Dransword 3-60F', 'https://cdn11.bigcommerce.com/s-iodt3qca/images/stencil/1280w/products/2040/8941/BX-01-BL-TT_copy__30959.1691779508.jpg?c=2', 'Suitable age: 12 years and up PKG size: W130×H152×D65mm', '580TK')">
+        <img src="https://www.takaratomyasia.com/img/product/910381/product-910381-B1.jpg?20231222_154400"
+          alt="Beyblade Image">
+        <div class="product-details">
+          <h3>Dransword 3-60F</h3>
+          <p>Suitable age: 12 years and up PKG size: W130×H152×D65mm</p>
+          <b>Price: 580TK</b>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>How to order?</h2>
+      <p>Find the best products here! and Click the <b>Order Now</b> button.<br> You will be at the Check-out page, In
+        the <b><i>3rd Box</i></b> write the name of the Beyblade you want and fill
+        all the boxes and give necessary details.</p>
+      <p><b>You can Order any where from Bangladesh. <h4>~ Delivery Charge Free In
+            <strong><i>Rangpur</i></strong> ~
+          </h4></b></p>
+      <p><b>Contact us at:</b></p>
+      <ul>
+        <li id="phn">Phone: <a class="pon" href="tel:+8801521722011" id="text-to-copy">+8801521722011</a><button
+            class="copy-btn" onclick="copyText('text-to-copy')">
+            <i class="fa-solid fa-copy fa-2x"></i>
+
+
+            <a href="https://www.facebook.com/profile.php?id=100089129497483"><img class="facebook"
+                src="facebook - Copy.png" alt="" srcset=""></a>
+
+          </button></li>
+      </ul>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p><strong><i>Spin strike BD</i></strong> is a Beyblade selling group in Bangladesh. We import Beyblades straight
+        from
+        <b>Indonesia</b>
+        and <b>Malaysia.</b>
+      </p>
+    </section>
+
+    <!-- Product Details Section (Hidden by default) -->
+    <section id="product-details" style="display: none;">
+      <h2 id="product-title"></h2>
+      <img id="product-image" src="" alt="Product Image">
+      <p id="product-description"></p>
+      <b id="product-price"></b>
+      <a href="https://abdul-ahadexpo.github.io/Beyblade-check-out/" target="_blank" class="order-btn">Order Now</a>
+      <h4 class="bal">OR</h4>
+      <a href="https://www.facebook.com/profile.php?id=100089129497483" target="_blank" class="chat-btn">Chat with
+        US</a>
+
+      <button onclick="reloadPage()">Back to Products</button>
+    </section>
+
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Spin-strike-Bd. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+
+
+  <script src="https://kit.fontawesome.com/5fc4420cfa.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script>
+    function reloadPage() {
+      location.reload(); // Reloads the current page
+    }
+  </script>
+
+
+
+
+
+</body>
+
+</html>
