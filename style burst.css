@@ -398,6 +398,12 @@ footer {
   display: none;
 }
 
+.facebook {
+  scale: 90%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
 @media (max-width: 768px) {
   .product {
     flex-direction: column;
